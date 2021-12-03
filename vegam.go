@@ -11,7 +11,7 @@ type Vegam struct {
 func (v *Vegam) New(rootPath string) error {
 	pathConfig := initPaths{
 		rootPath:    rootPath,
-		folderNames: []string{"handlers", "migrations", "views", "data", "public", "tmp", "logs", "middleware"},
+		folderNames: []string{"handlers", "migrations", "views", "models", "public", "tmp", "logs", "middleware"},
 	}
 
 	err := v.Init(pathConfig)
